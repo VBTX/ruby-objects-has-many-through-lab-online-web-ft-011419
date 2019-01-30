@@ -20,6 +20,7 @@ class Patient
     Appointment.all.select do |apt|
       apt.patient == self#iterates returns appt that belong to patient
   end
+end
 
    def doctors
     @appointments# iterates and collects doctor that belongs to each appt
