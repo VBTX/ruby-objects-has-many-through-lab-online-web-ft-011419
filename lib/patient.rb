@@ -24,6 +24,7 @@ end
 
    def doctors
     appointments.map do |apt|
-      apt.doctor# iterates and collects doctor that belongs to each appt
+      apt.doctor
+    end# iterates and collects doctor that belongs to each appt
   end
 end
