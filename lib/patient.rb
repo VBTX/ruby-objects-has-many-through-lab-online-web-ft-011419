@@ -23,6 +23,7 @@ class Patient
 end
 
    def doctors
-    @appointments# iterates and collects doctor that belongs to each appt
+    appointments.map do |apt|
+      apt.doctor# iterates and collects doctor that belongs to each appt
   end
 end
