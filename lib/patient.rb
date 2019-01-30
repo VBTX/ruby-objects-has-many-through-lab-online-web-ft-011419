@@ -17,7 +17,8 @@ class Patient
   end
 
    def appointments
-    @appointments #iterates returns appt that belong to patient
+    Appointment.all.select do |apt|
+      apt.patient == self#iterates returns appt that belong to patient
   end
 
    def doctors
