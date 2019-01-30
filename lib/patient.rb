@@ -13,7 +13,7 @@ class Patient
   end
 
    def new_appointment(doctor, date)
-    #creates new appt which should know that it belongs to the patient
+      Appointment.new()#creates new appt which should know that it belongs to the patient
   end
 
    def appointments
